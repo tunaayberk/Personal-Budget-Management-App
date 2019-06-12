@@ -21,23 +21,17 @@ const RecordSchema = new Schema({
   },
   category: [
     {
-      name: {
+      category: {
         type: Schema.Types.ObjectId,
         ref: "categories"
-      },
-      icon: {
-        type: String
       }
     }
   ],
   tags: [
     {
-      name: {
+      tag: {
         type: Schema.Types.ObjectId,
         ref: "tags"
-      },
-      icon: {
-        type: String
       }
     }
   ],
